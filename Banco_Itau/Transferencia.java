@@ -3,7 +3,7 @@ package Banco_Itau;
 class Transferencia {  
 	  public static void pix (ContaBancaria conta_emissor, ContaBancaria conta_receptor, double valor) throws Exception {
 	    if (valor <= 0 || valor >= 5000) {
-	      throw new Exception("Sua transferência não foi completada, pois o valor é considerado inválido para transferência PIX");
+	      throw new Exception("Sua transferÃªncia nÃ£o foi completada, pois o valor Ã© considerado invÃ¡lido para transferÃªncia PIX");
 	    }
 
 	    conta_emissor.addSaldo(valor * -1);
@@ -12,7 +12,7 @@ class Transferencia {
 
 	  public static void ted (ContaBancaria conta_emissor, ContaBancaria conta_receptor, double valor) throws Exception {
 	    if (valor <= 5000 || valor >= 10000) {
-	      throw new Exception("Sua transferência não foi completada, pois o valor é considerado inválido para transferência TED");
+	      throw new Exception("Sua transferÃªncia nÃ£o foi completada, pois o valor Ã© considerado invÃ¡lido para transferÃªncia TED");
 	    }
 
 	    conta_emissor.addSaldo(valor * -1);
@@ -21,10 +21,10 @@ class Transferencia {
 
 	  public static void doc (ContaBancaria conta_emissor, ContaBancaria conta_receptor, double valor) throws Exception {
 	    if (valor <= 10000) {
-	      throw new Exception("Sua transferência não foi completada, pois o valor é considerado inválido para transferência DOC");
+	      throw new Exception("Sua transferÃªncia nÃ£o foi completada, pois o valor Ã© considerado invÃ¡lido para transferÃªncia DOC");
 	    }
 
 	    conta_emissor.addSaldo(valor * -1);
 	    conta_receptor.addSaldo(valor);
 	  }
-	}
+}
