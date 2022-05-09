@@ -8,4 +8,4 @@ class Main {
 
 	    Leitura leitura = new Leitura("entrada.txt");
 	  }
-	}
+}
